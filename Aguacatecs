@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguacatex - Insecticida Natural</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background-color: #f4f9f4; color: #333; }
+        header { background: #2e7d32; color: white; padding: 15px 0; text-align: center; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-size: 18px; transition: color 0.3s; }
+        nav a:hover { color: #c8e6c9; }
+        .container { width: 90%; max-width: 1100px; margin: 100px auto 40px; text-align: center; }
+        section { padding: 60px 20px; }
+        h1, h2 { color: #1b5e20; }
+        .btn { display: inline-block; padding: 12px 25px; background: #1b5e20; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+        .btn:hover { background: #388e3c; }
+        .contacto { background: #1b5e20; color: white; text-align: center; padding: 40px 20px; }
+        .hero { background: url('https://i.imgur.com/20ERxg0.jpeg') center/cover no-repeat; padding: 80px 20px; color: white; text-align: center; }
+        .hero img { width: 50%; max-width: 500px; display: block; margin: 20px auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        .beneficios, .ingredientes { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+        .beneficio, .ingrediente { width: 300px; text-align: center; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .beneficio:hover, .ingrediente:hover { transform: translateY(-10px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+        .beneficio img, .ingrediente img { width: 100%; max-width: 250px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        .img-container { display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
+        .img-container img { width: 45%; max-width: 400px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s, box-shadow 0.3s; }
+        .img-container img:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); }
+        .img-container p { width: 45%; max-width: 400px; text-align: left; font-size: 18px; line-height: 1.6; }
+        .comprar { background: white; padding: 40px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 40px 0; }
+        .comprar img { width: 50%; max-width: 400px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 20px 0; }
+        .testimonios { background: #e8f5e9; padding: 40px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 40px 0; }
+        .testimonio { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 20px 0; }
+        .testimonio p { font-style: italic; }
+        .testimonio h3 { color: #1b5e20; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#ingredientes">Ingredientes</a></li>
+                <li><a href="#comprar">Comprar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="inicio">
+        <h1>Protección Natural, Sin Químicos</h1>
+        <p>Bienvenido a la revolución del control de plagas. Presentamos Aguacatex, un insecticida completamente natural, elaborado a base de hueso de aguacate y libre de químicos dañinos. Nuestra fórmula innovadora te ofrece una solución eficaz para eliminar insectos sin comprometer la seguridad de tu familia, mascotas o el medio ambiente.</p>
+        <p>Los insecticidas convencionales contienen compuestos tóxicos que pueden afectar la calidad del aire en tu hogar, dañar el suelo e incluso representar un riesgo para la salud. Con Aguacatex apostamos por un enfoque ecológico: un producto sostenible que repele y elimina plagas sin dejar residuos peligrosos.</p>
+        <p>Descubre cómo puedes proteger tu hogar y jardín con la fuerza de la naturaleza porque un ambiente libre de plagas no debería significar un ambiente contaminado.</p>
+        <a href="#beneficios" class="btn">Explora nuestros beneficios</a>
+    </div>
+
+    <div class="container">
+        <section id="beneficios">
+            <h2>¿Por qué elegir nuestro insecticida?</h2>
+            <p>Sabemos que cuando se trata de proteger tu hogar y seres queridos, la elección del producto adecuado es clave, es por eso que hemos desarrollado un insecticida que combina eficacia, seguridad y respeto por el medio ambiente.</p>
+            <div class="beneficios">
+                <div class="beneficio">
+                    <img src="https://i.imgur.com/6HAWiIG.jpeg" alt="Natural">
+                    <h3>100% Natural y Biodegradable</h3>
+                    <p>Elaborado con extracto de hueso de aguacate, sin pesticidas sintéticos ni componentes tóxicos y se descompone de manera natural sin contaminar el agua, el suelo o el aire.</p>
+                </div>
+                <div class="beneficio">
+                    <img src="https://i.imgur.com/abc123.jpg" alt="Mascotas">
+                    <h3>Seguro para Mascotas y Niños</h3>
+                    <p>A diferencia de los insecticidas químicos, Aguacatex no representa un riesgo para los más pequeños de la casa ni para tus mascotas. Puedes usarlo con tranquilidad en espacios interiores y exteriores.</p>
+                </div>
+                <div class="beneficio">
+                    <img src="https://i.imgur.com/abc123.jpg" alt="Plagas">
+                    <h3>Eficaz Contra Diversas Plagas</h3>
+                    <p>Repelente y eliminador natural de mosquitos, hormigas, pulgones, ácaros, cucarachas y otros insectos no deseados. Su fórmula actúa de manera rápida y duradera.</p>
+                </div>
+                <div class="beneficio">
+                    <img src="https://i.imgur.com/abc123.jpg" alt="Aroma">
+                    <h3>Aroma Agradable y No Irritante</h3>
+                    <p>A diferencia de los insecticidas tradicionales con olores fuertes y químicos agresivos, nuestro producto tiene un aroma suave y natural que no molesta ni irrita las vías respiratorias.</p>
+                </div>
+                <div class="beneficio">
+                    <img src="https://i.imgur.com/abc123.jpg" alt="Medio Ambiente">
+                    <h3>Compromiso con el Medio Ambiente</h3>
+                    <p>El aprovechamiento del hueso de aguacate contribuye a la reducción de desperdicios y fomenta una producción sostenible. Además, su envase es reciclable y libre de plásticos contaminantes.</p>
+                </div>
+            </div>
+            <p>🌱 Cuida tu hogar y el planeta al mismo tiempo. Prueba Aguacatex hoy y haz el cambio hacia un control de plagas más consciente.</p>
+        </section>
+
+        <section id="ingredientes">
+            <h2>El poder del hueso de aguacate en el control de plagas</h2>
+            <div class="img-container">
+                <img src="https://i.imgur.com/abc123.jpg" alt="Aguacate">
+                <p>El ingrediente principal de nuestro insecticida es el extracto de hueso de aguacate, un subproducto con propiedades repelentes naturales. Este componente contiene compuestos bioactivos como flavonoides y fenoles, conocidos por su capacidad de ahuyentar insectos sin la necesidad de pesticidas sintéticos.</p>
+            </div>
+            <h3>¿Por qué elegimos el aguacate?</h3>
+            <ul>
+                <li><strong>Propiedades repelentes naturales:</strong> Su composición química afecta el sistema nervioso de los insectos sin causar daño a humanos, mascotas o plantas.</li>
+                <li><strong>Sostenibilidad:</strong> Utilizamos un residuo orgánico que, de otro modo, se desperdiciaría, promoviendo un modelo de economía circular.</li>
+                <li><strong>Eficacia comprobada:</strong> Estudios han demostrado que los extractos naturales del hueso de aguacate pueden ser altamente efectivos contra insectos como mosquitos, pulgones y hormigas.</li>
+            </ul>
+            <p>🔬 Innovación y naturaleza en una sola fórmula. Con Aguacatex, llevamos la ciencia de los ingredientes naturales al siguiente nivel, ofreciéndote un insecticida seguro y confiable.</p>
+        </section>
+
+        <section id="comprar">
+            <h2>Lleva la naturaleza a tu hogar, libre de insectos y sin químicos</h2>
+            <p>Sabemos que quieres soluciones efectivas sin comprometer la seguridad de tu entorno. Por eso, hemos diseñado diferentes presentaciones para adaptarnos a tus necesidades:</p>
+            <div class="comprar">
+                <h3>🛒 Opciones disponibles:</h3>
+                <ul>
+                    <li><strong>Concentrado de 100 ml por $50:</strong> Ideal para uso doméstico y aplicación directa en superficies y plantas.</li>
+                    <li><strong>Concentrado de 200 ml por $100:</strong> Para aquellos que buscan una opción económica y ecológica.</li>
+                    <li><strong>Concentrado de 300 ml por $150:</strong> Para aquellos que buscan algo de mayor tamaño.</li>
+                    <li><strong>Concentrado de 400 ml por $200:</strong> Algo más grande para usos insecticidas de mayor volumen.</li>
+                </ul>
+                <p>🚚 Envíos a todo el país. Realizamos entregas rápidas para que puedas empezar a proteger tu hogar lo antes posible.</p>
+                <p>💳 Métodos de pago: Aceptamos tarjetas de crédito, débito, transferencias bancarias y pagos en efectivo en puntos seleccionados.</p>
+                <p>🎁 Promoción especial: ¡Prueba nuestro producto con un 20% de descuento en tu primera compra!</p>
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+        </section>
+
+        <section class="testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonio">
+                <p>"Aguacatex ha sido un cambio increíble en mi hogar. Es seguro para mis hijos y mascotas, y realmente funciona. ¡Lo recomiendo!"</p>
+                <h3>- María G.</h3>
+            </div>
+            <div class="testimonio">
+                <p>"Me encanta que sea natural y biodegradable. Además, el aroma es muy agradable. Definitivamente seguiré comprando."</p>
+                <h3>- Juan P.</h3>
+            </div>
+        </section>
+    </div>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>📩 Correo electrónico: AguacatexMéxico.com</p>
+        <p>📞 Teléfono/WhatsApp: +52 7751354645</p>
+        <p>📍 Ubicación: Colonia Los Robles, Tulancingo de Bravo, Hidalgo, Código Postal 46545, #31</p>
+        <p>🕒 Horario de atención: Lunes a viernes de 9:00 a 18:00</p>
+        <p>🌱 Síguenos en redes sociales y mantente al tanto de novedades y promociones:</p>
+        <p>Facebook: Aguacatex | Instagram: @Aguacatex</p>
+        <p>💬 Déjanos tu consulta en el formulario de contacto y te responderemos en menos de 24 horas.</p>
+    </section>
+</body>
+</html>
