@@ -1,0 +1,7 @@
+echo "# Aguacatex" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Aleks0732/Aguacatex.git
+git push -u origin main
